@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- ANASAYFA - Bee Healthy - index.html -->
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title> Bee Healthy </title>
+		<link rel="stylesheet" type="text/css" href="css/bee.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="shortcut icon" type="image/x-icon" href="images/icon.png" />
+
+	</head>
+	<body>
+		<!-- Login Modal Formu> -->
+		<div id="id01" class="modal">
+			<form class="modal-content animate" action="/action_page.php" method="post">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+				<div class="container">
+					<input type="text" placeholder="Kullanıcı adı" name="uname" required/>
+					<input type="password" placeholder="Şifre" name="psw" required/>
+					<input type="submit" value="Giriş"/>
+					<a href="register.html">Üye Ol</a>
+				</div>
+			</form>
+		</div>
+
+		<!-- Header Bölümü -->
+		<div class="header">
+			<div class="left-header"></div>
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+			</div>
+			<div class="right-header">
+				<div class="mySlides fade">
+					<div class="BackGround-0"></div>
+				</div>
+				<div class="mySlides fade">
+					<div class="BackGround-1"></div>
+				</div>
+				<div class="mySlides fade">
+					<div class="BackGround-2"></div>
+				</div>
+				<div class="mySlides fade">
+					<div class="BackGround-3"></div>
+				</div>
+				<div class="mySlides fade">
+					<div class="BackGround-4"></div>
+				</div>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+		
+		<!-- Navigasyon Bar -->
+		<div class="navbar">
+			<div class="navbar-left">
+				<div class="dropdown">
+					<button class="dropbtn">Ürünlerimiz <i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="#hambal">Ham Bal</a>
+						<a href="#peteklibal">Petekli Bal</a>
+						<a href="#propolis">Propolis</a>
+						<a href="#arisutu">Arı Sütü</a>
+						<a href="#balmumu">Balmumu</a>
+						<a href="#aripoleni">Arı Poleni</a>
+						<a href="#ariekmegi">Arı Ekmeği</a>
+					</div>
+				</div>
+				<a href="aboutus.html" class="right">Hakkımızda</a>
+			</div>
+			<div class="navbar-under"></div>
+			<div class="navbar-right">
+				<a href="articles.html">Makaleler</a>
+				<a href="contact.html" class="right">İletişim</a>
+			</div>
+		</div>
+		
+		<!-- İçerik bölümü -->
+		<div class="content">
+			<div class="col-1">
+				<img src="images/content-bee-1.png" alt="ari"/>
+				<h2>Bal</h2>
+				<p>Vitamin ve mineral kaynağıdır, bağışıklığı güçlendirir. Kırmızı kan hücrelerinin sayısını artırır, demir eksikliğini giderir. Prebi-yotiktir, bağırsak florasını dü-zenler. Cildi yeniler. Kanserden korur. Hızlı bir enerji desteğidir.
+				</p>
+			</div>
+			<div class="col-2">
+				<img src="images/content-bee-1.png" alt="ari"/>
+				<h2>Propolis</h2>
+				<p>Propolis, güçlü antimikrobiyal aktivitesinden dolayı, doğal an-tibiyotik olarak bilinir.
+				Eskiden beri yaraların iyileştirilmesinde, dokuların yenilenmesinde ve yanıkların tedavisinde kullanıl-mıştır.
+				</p>
+			</div>
+			<div class="col-3">
+				<a href="#sepetim"><img class="shop-pic" src="images/shop-pic.png" alt="sepetim"/></a>
+				<img class="login-pic" src="images/login-pic.png"  alt="loginresmi"
+				onclick="document.getElementById('id01').style.display='block';modal.scrollTo(0,0);"/>
+				<!-- Modal scrolu en başa döner - modal.scrollTo(0,0); -->
+			</div>
+			<div class="col-4">
+				<img src="images/content-bee-1.png" alt="ari"/>
+				<h2>Arı Poleni</h2>
+				<p>Vücudun gerilimlere ve hasta-lıklara karşı direncini arttırır. Aynı zamanda birçok hasta-lıkların iyileşmesini hızlandırır. Yaşlanmayı geciktirici ve canlı-lığı sağlayan yenileştirici özel-liklere sahiptir.
+				</p>
+			</div>
+			<div class="col-5">
+				<img src="images/content-bee-1.png" alt="ari"/>
+				<h2>Arı Sütü</h2>
+				<p>Arısütü öğrenme kapasitesinin sağlanmasında, cinsel sorun-larda, kansızlık, kolesterol, kanser, yüksek ve düşük kan basıncı damar sertliği, kronik ve tekrarlayan hastalıkların tedavisinde kullanılmaktadır.
+				</p>
+			</div>
+		</div>
+		
+		
+		
+		<!-- Footer Bölümü -->
+		<div class="footer">
+			<div class="content-2">
+				<div class="col-6">
+					<img src="images/content-bee-1.png" alt="ari"/>
+					<h2>Arı Ekmeği</h2>
+					<p>Arı ekmeği, anemi, pnömoni ve bakteriyel enfeksiyonları olan çocukların yanı sıra 7,5 yaşına kadar özellikle prematüre çocuklarda pediatrik amaçla uygulanır. Protein, vitamin-mineral kaynağı olan zengin içerikli bir üründür. 
+					</p>
+				</div>
+				<div class="col-7">
+					<img src="images/content-bee-1.png" alt="ari"/>
+					<h2>Balmumu</h2>
+					<p>A vitamininden, antioksidana kadar hemen her şey balmumu içerisinde mevcuttur. Yumuşatıcı ve nemlendirici özelliği vardır. Antienflamatuar ve antiseptik özellikleri bulunmaktadır.
+					</p>
+				</div>
+			</div>
+			<img src="images/footer.png" alt="footer"/>
+			<div class="social-media">
+				<div class="icon-container">
+				<a href="#facebook"><img src="images/facebook.png" alt="facebook"/></a></div>
+				<div class="icon-container">
+				<a href="#twitter"><img src="images/twitter.png" alt="twitter"/></a></div>
+				<div class="icon-container">
+				<a href="#whatsapp"><img src="images/whatsapp.png" alt="whatsapp"/></a></div>
+				<div class="icon-container">
+				<a href="#instagram"><img src="images/instagram.png" alt="instagram"/></a></div>
+			</div>
+			<div class="cover">
+				<div class="copyright">
+					<p>2018 &copy; M.Yıldırım Bayrakçı &amp; Evangelina Bayrakçı</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- JavaScript Bölümü -->
+		<script>
+			/* SLIDESHOW SCRIPT */
+			var timer; // Zamanlayıcı
+			var slideIndex = 1; 
+			showSlides(slideIndex);
+
+			// Next butonuna basıldığında bir sonraki slayta geçer.
+			// Timer temizlenir ve tekrar kurulur.
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+				clearInterval(timer);
+				timer = window.setInterval(function(){
+				showSlides(slideIndex+=1);
+				}, 4000);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				if (n > slides.length) {slideIndex = 1} 
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none"; 
+				}
+				slides[slideIndex-1].style.display = "block"; 
+			}
+				timer = window.setInterval(function(){
+				showSlides(slideIndex+=1);
+			}, 4000);
+		   /* SLIDESHOW SCRIPT BİTİŞ */
+			
+			/* MODAL SCRIPT */
+			var modal = document.getElementById('id01');
+			// Modal dışında herhangi bir yere tıklanırsa kapat.
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+			/* MODAL SCRIPT BİTİŞ*/
+		</script>
+	</body>
+</html>
